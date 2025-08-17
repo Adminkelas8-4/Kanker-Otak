@@ -1,0 +1,50 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; transition: all 0.3s; }
+
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  background: #1a73e8; color: #fff; padding: 10px 20px; position: sticky; top: 0; z-index: 1000;
+}
+.navbar .logo { font-size: 1.3rem; font-weight: bold; }
+.navbar ul { display: flex; list-style: none; }
+.navbar ul li { margin: 0 10px; }
+.navbar ul li a { color: white; text-decoration: none; transition: 0.3s; }
+.navbar ul li a:hover { text-decoration: underline; }
+#darkModeToggle { background: transparent; border: none; color: white; cursor: pointer; font-size: 1.2rem; }
+
+.hero {
+  height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/brain.jpg') center/cover;
+  color: white; text-align: center; padding: 20px;
+}
+.hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+.btn {
+  display: inline-block; padding: 10px 20px; margin-top: 15px;
+  background: #ff4757; color: white; border-radius: 25px; text-decoration: none; transition: 0.3s;
+}
+.btn:hover { background: #e84118; }
+
+.articles, .stats, .contact { padding: 60px 20px; text-align: center; }
+.article-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+.card {
+  background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-10px); }
+
+.stats canvas { max-width: 600px; margin: auto; }
+
+.contact form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+.contact input, .contact textarea {
+  padding: 10px; border: 1px solid #ccc; border-radius: 10px; font-size: 1rem;
+}
+.contact button { cursor: pointer; border: none; }
+
+footer { text-align: center; padding: 20px; background: #1a73e8; color: white; margin-top: 20px; }
+
+/* Dark Mode */
+body.dark { background: #121212; color: #eee; }
+body.dark .navbar { background: #222; }
+body.dark .card { background: #1e1e1e; color: #fff; }
+body.dark footer { background: #222; }
