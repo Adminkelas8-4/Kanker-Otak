@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanker Otak - Informasi Lengkap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🧠 BrainCancerInfo</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#articles">Artikel</a></li>
+        <li><a href="#stats">Statistik</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+    <button id="darkModeToggle">🌙</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Informasi Kanker Otak</h1>
+    <p>Berdasarkan sumber terpercaya dari <b>Alodokter</b> & <b>WHO</b></p>
+    <a href="#articles" class="btn">Baca Artikel</a>
+  </section>
+
+  <!-- Artikel Section -->
+  <section id="articles" class="articles">
+    <h2>Artikel Edukatif</h2>
+    <div class="article-container">
+      <div class="card">
+        <h3>Apa itu Kanker Otak?</h3>
+        <p>Kanker otak adalah pertumbuhan sel abnormal di jaringan otak yang dapat memengaruhi fungsi saraf.</p>
+        <a href="https://www.alodokter.com/kanker-otak" target="_blank">Baca Selengkapnya</a>
+      </div>
+      <div class="card">
+        <h3>Gejala & Tanda</h3>
+        <p>Sakit kepala hebat, mual, gangguan penglihatan, hingga kejang bisa menjadi tanda kanker otak.</p>
+        <a href="https://www.who.int/cancer" target="_blank">Baca Selengkapnya</a>
+      </div>
+      <div class="card">
+        <h3>Pencegahan</h3>
+        <p>Menerapkan pola hidup sehat, mengurangi paparan radiasi, dan deteksi dini sangat penting.</p>
+        <a href="https://www.alodokter.com/kanker-otak" target="_blank">Baca Selengkapnya</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistik -->
+  <section id="stats" class="stats">
+    <h2>Statistik Global</h2>
+    <canvas id="cancerChart"></canvas>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="contact">
+    <h2>Konsultasi & Pertanyaan</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit" class="btn">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Informasi Kanker Otak | Sumber: Alodokter & WHO</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+        </html>
+        
